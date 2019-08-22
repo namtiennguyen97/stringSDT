@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ValidateDT</title>
+</head>
+<body>
+<script>
+    function checking(str) {
+        let kTra = /[8,4]-[0-9]{10}/;
+        let kq = kTra.test(str);
+        if (kq){
+            document.write("So dien thoai hop le!");
+        } else {
+            document.write("So dien thoai khong hop le!");
+        }
+    };
+    let a = prompt("");
+    checking(a);
+</script>
+</body>
+</html>
